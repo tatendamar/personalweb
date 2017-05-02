@@ -1,0 +1,346 @@
+/* get rid of default padding and margin */
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+body{
+	/*instead for the font we could just write font: 15px/1.5 Arial, Helvetica, sans-serif;*/
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+header,nav,article,section,footer,aside{
+	display: block;
+}
+
+/* global */
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+
+	/*height: 90px;
+	background-color: #333;	
+	box-shadow: 0px 4px 2px #333;
+	margin-bottom: 0px;
+	padding-bottom: 0px;*/
+}
+
+.clear{
+	clear: both;
+}
+
+.button_1{
+	height: 38px;
+	background: #e8491d;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #fff;
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.logo {
+	padding: 20px;
+	height: 40px;
+	width: 300px;
+	margin: 0px auto;
+	float: left;
+	color: white;
+}
+
+.top_nav{
+	float: right;
+	width: 700px;
+}
+
+ul#top_nav{
+	list-style-type: none;
+	float: right;
+	padding:35px 20px;
+
+	/*display: inline-block;*/
+
+}
+
+ul#top_nav, ul.sub1, ul.sub2{
+	list-style-type: none;
+	font-size: 9pt;
+	
+}
+
+
+ul#top_nav li{
+	
+	width: 125px;
+	text-align: center;
+	position: relative;
+	float: right;
+	margin-right: 4px;
+}
+
+ul#top_nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+	width: 125px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+}
+
+ul#top_nav .sub1 li{
+	}
+
+ul#top_nav .sub1 a{
+	margin-top: 3px;
+}
+ul#top_nav .sub2 a{
+	margin-left: 10px;
+}
+ul#top_nav li:hover > a{
+	background-color: #cfc;
+}
+ul#top_nav li:hover a:hover{
+	background-color: #ff0;
+}
+ul#top_nav ul.sub1 {
+	display: none;
+	position: absolute;
+	top: 26px;
+	left: 0px;
+}
+
+ul#top_nav ul.sub2{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left:126px;
+}
+ul#top_nav li:hover .sub1{
+	display: block;
+}
+ul#top_nav .sub1 li:hover .sub2{
+	display: block;
+}
+.darrow{
+	font-size: 10pt;
+	position: absolute;
+	top: 5px;
+	right: 4px;
+
+}
+.rarrow{
+	font-size: 10pt;
+	position: absolute;
+	top: 5px;
+	right: 4px;
+}
+
+
+/*	margin: 0;
+	padding: 0;
+}
+
+header li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+*/
+
+/*header*/
+
+header{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+header #branding{
+	float: left;
+	margin-top:10px; 
+
+}
+
+header #branding h1{
+	margin: 0;
+}
+
+header nav{
+	float: right;
+	margin-top: 10px;
+
+}
+
+header .highlight, header .current a{
+	color: #e8491d;
+	font-weight: bold;
+
+
+}
+
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+/* showcase */
+#showcase{
+	min-height: 400px;
+	background: url("./images/showcase2.jpg") no-repeat 0 -400px;
+	text-align: center;
+	color: #fff;
+}
+
+#showcase h1{
+	margin-top: 100px;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+
+/* newsletter*/
+
+#newsletter{
+	padding: 15px;
+	color: #fff;
+	background: #35424a;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+
+#showcase p{
+	font-size: 20px;
+}
+
+/* boxes*/
+
+#boxes{
+	margin-top: 20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+
+}
+
+#boxes .box img{
+	width: 100px;
+
+}
+
+/* float aside and section*/
+
+/* sidebar*/
+aside#sidebar{
+	float: right;
+	width: 30%;
+	margin-top: 30px;
+}
+
+aside#sidebar .qoute input, aside#sidebar .qoute textarea{
+	width: 90%;
+	padding: 5px;
+
+}
+
+textarea{
+	resize: none;
+}
+/*main-col*/
+article#main-col{
+	float: left;
+	width: 65%;
+}
+
+/*services*/
+ul#services li{
+	list-style: none;
+	padding: 20px;
+	border: #ccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6;
+
+}
+/* make footer clear floated elements*/
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #e8491d;
+}
+.page_footer{
+	clear: both;
+	text-align: center;
+
+}
+
+/* media queries*/
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box{
+  	float: none;
+  	text-align: center;
+  	width: 100%;
+
+  }
+
+  header{
+  	padding-bottom: 20px;
+  }
+	
+ #showcase h1{
+ 	margin-top: 40px;
+ }
+
+ #newsletter button{
+ 	display: block;
+ 	width: 100%;
+ }
+
+ #newsletter form input[type="email"]{
+ 	width: 100%;
+ 	margin-bottom: 5px;
+ }
+
+}
